@@ -63,11 +63,7 @@
                 {
 
                 }
-                if(yesNo !="Yes"||yesNo !="Y"||yesNo != "N"||yesNo != "No")
-                {
-                    Console.WriteLine("Duzgun cavab daxil et");
-                } 
-
+               
 
             }
 
