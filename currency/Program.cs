@@ -8,7 +8,7 @@
             
 
             double[] currencies = { 0.54 , 18.97 , 0.59 }; //0-azntoeuro 1-azntotry 2-azntodollar
-
+            string[] currenciesTypes = { "Euro", "Tl", "Dollar" };
 
             while (true)
             {
@@ -53,26 +53,26 @@
                 if (select == 1)
                 {
                     sum = userEntered * currencies[2];
-                    
 
+                    Console.WriteLine($"valyuta cevrilmesi : {sum} {currenciesTypes[2]} ");
                 }
                 else if (select == 2)
                 {
                     sum = userEntered * currencies[0];
-                    
 
+                    Console.WriteLine($"valyuta cevrilmesi : {sum} {currenciesTypes[0]} ");
                 }
                 else if (select == 3)
                 {
                     sum = userEntered * currencies[1];
-
+                    Console.WriteLine($"valyuta cevrilmesi : {sum} {currenciesTypes[1]} ");
                 }
                 
 
 
-                Console.WriteLine($"valyuta cevrilmesi : {sum}");
+                
 
-                Console.WriteLine("yeni valyuta firmek istiyirsiz?   davam etmek istiyirsizse Y/Yes ve yaxud inkar etmek istiyirsizse N/No daxil edin");
+                Console.WriteLine("Yeni valyuta girmek istiyirsiz?   davam etmek istiyirsizse Y/Yes ve yaxud inkar etmek istiyirsizse Exit daxil edin");
 
                 //string yesNo = Console.ReadLine();
 
@@ -85,30 +85,17 @@
 
                 //}
                 string loopTerminationResult = Console.ReadLine();
-                if (loopTerminationResult == "No" || loopTerminationResult == "N")
+                if (loopTerminationResult == "Exit")
                 {
                         //break based loop control
                  break;
                 }
-                while (true)
+                else if (loopTerminationResult == "Yes" || loopTerminationResult == "Y")
                 {
 
-
-                    if (loopTerminationResult == "Yes" || loopTerminationResult == "Y")
-                    {
-                        break;
-
-
-                    }else
-                    {
-                        Console.WriteLine("duzgun daxil et!!!");
-                        loopTerminationResult = Console.ReadLine();
-                    }
-
-
-
-
                 }
+                   
+              
                
                
 
