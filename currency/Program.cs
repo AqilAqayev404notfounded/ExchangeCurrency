@@ -44,25 +44,42 @@
                     string currencyCode;
                     Console.WriteLine("valyutani adini daxil edin");
                     currencyCode = Console.ReadLine();
-
-
-                    if (currencyCode == "Euro")
+                    bool k=false;
+                    int i = 0;
+                    for ( i = 0; i < currencies.Length; i++)
                     {
-                        Console.WriteLine($"1 AZN = {currencies[0]}{currenciesTypes[0]}");
-                    } 
-                    else if(currencyCode == "Dollar")
-                    {
-                        Console.WriteLine($"1 AZN = {currencies[2]}{currenciesTypes[2]}");
-
-                    }else if(currencyCode == "Tl")
-                    {
-                        Console.WriteLine($"1 AZN = {currencies[1]}{currenciesTypes[1]}");
-
+                        if(currencyCode == currenciesTypes[i])
+                        {
+                            k = true;
+                            break;
+                        }
                     }
-                    else 
+                    if(k)
+                    {
+                        Console.WriteLine(currencies[i]+"-"+ currenciesTypes[i]);
+                    }
+                    else
                     {
                         Console.WriteLine("Duzgun daxil edin");
                     }
+
+                    //if (currencyCode == "Euro")
+                    //{
+                    //    Console.WriteLine($"1 AZN = {currencies[0]}{currenciesTypes[0]}");
+                    //} 
+                    //else if(currencyCode == "Dollar")
+                    //{
+                    //    Console.WriteLine($"1 AZN = {currencies[2]}{currenciesTypes[2]}");
+
+                    //}else if(currencyCode == "Tl")
+                    //{
+                    //    Console.WriteLine($"1 AZN = {currencies[1]}{currenciesTypes[1]}");
+
+                    //}
+                    //else 
+                    //{
+                    //    Console.WriteLine("Duzgun daxil edin");
+                    //}
 
                 }
 
