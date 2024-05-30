@@ -63,23 +63,7 @@
                         Console.WriteLine("Duzgun daxil edin");
                     }
 
-                    //if (currencyCode == "Euro")
-                    //{
-                    //    Console.WriteLine($"1 AZN = {currencies[0]}{currenciesTypes[0]}");
-                    //} 
-                    //else if(currencyCode == "Dollar")
-                    //{
-                    //    Console.WriteLine($"1 AZN = {currencies[2]}{currenciesTypes[2]}");
-
-                    //}else if(currencyCode == "Tl")
-                    //{
-                    //    Console.WriteLine($"1 AZN = {currencies[1]}{currenciesTypes[1]}");
-
-                    //}
-                    //else 
-                    //{
-                    //    Console.WriteLine("Duzgun daxil edin");
-                    //}
+                   
 
                 }
 
